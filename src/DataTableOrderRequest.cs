@@ -5,7 +5,7 @@ namespace Soenneker.DataTables.Dtos.ServerSideRequest;
 /// <summary>
 /// Represents a single column ordering instruction sent by DataTables.
 /// </summary>
-public sealed class DataTablesOrderRequest
+public sealed class DataTableOrderRequest
 {
     /// <summary>
     /// The index of the column to apply ordering to (zero-based).

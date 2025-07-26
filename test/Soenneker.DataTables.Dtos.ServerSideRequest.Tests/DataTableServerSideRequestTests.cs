@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Soenneker.DataTables.Dtos.ServerSideRequest.Tests;
 
-public sealed class DataTablesServerSideRequestTests : UnitTest
+public sealed class DataTableServerSideRequestTests : UnitTest
 {
     [Fact]
     public void Default()

@@ -6,7 +6,7 @@ namespace Soenneker.DataTables.Dtos.ServerSideRequest;
 /// <summary>
 /// Represents a server-side processing request from DataTables.js.
 /// </summary>
-public sealed class DataTablesServerSideRequest
+public sealed class DataTableServerSideRequest
 {
     /// <summary>
     /// Draw counter sent by DataTables to ensure request/response alignment. This should be echoed back in the response.
@@ -30,17 +30,17 @@ public sealed class DataTablesServerSideRequest
     /// Global search term and options. Can be null if no global search is applied.
     /// </summary>
     [JsonPropertyName("search")]
-    public DataTablesSearchRequest? Search { get; set; }
+    public DataTableSearchRequest? Search { get; set; }
 
     /// <summary>
     /// Sorting instructions sent by DataTables, ordered by priority. Can be null if no ordering is applied.
     /// </summary>
     [JsonPropertyName("order")]
-    public List<DataTablesOrderRequest>? Order { get; set; }
+    public List<DataTableOrderRequest>? Order { get; set; }
 
     /// <summary>
     /// Metadata for each column in the table, including search and sort options. May be null but typically present.
     /// </summary>
     [JsonPropertyName("columns")]
-    public List<DataTablesColumnRequest>? Columns { get; set; }
+    public List<DataTableColumnRequest>? Columns { get; set; }
 }

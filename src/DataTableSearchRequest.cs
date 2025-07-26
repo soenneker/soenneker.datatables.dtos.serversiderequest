@@ -5,7 +5,7 @@ namespace Soenneker.DataTables.Dtos.ServerSideRequest;
 /// <summary>
 /// Represents a search condition, either global or per-column.
 /// </summary>
-public sealed class DataTablesSearchRequest
+public sealed class DataTableSearchRequest
 {
     /// <summary>
     /// The search value entered by the user. Can be null or empty.

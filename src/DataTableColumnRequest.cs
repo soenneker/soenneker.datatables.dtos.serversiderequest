@@ -2,7 +2,7 @@
 
 namespace Soenneker.DataTables.Dtos.ServerSideRequest;
 
-public sealed class DataTablesColumnRequest
+public sealed class DataTableColumnRequest
 {
     /// <summary>
     /// The property name or field bound to the column's data in the source.
@@ -32,5 +32,5 @@ public sealed class DataTablesColumnRequest
     /// Column-specific search term and options. Can be null if no per-column search is applied.
     /// </summary>
     [JsonPropertyName("search")]
-    public DataTablesSearchRequest? Search { get; set; }
+    public DataTableSearchRequest? Search { get; set; }
 }
