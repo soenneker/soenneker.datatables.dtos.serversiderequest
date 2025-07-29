@@ -27,6 +27,13 @@ public sealed class DataTableServerSideRequest
     public int Length { get; set; }
 
     /// <summary>
+    /// If applicable, a storage continuation token that the client must send back
+    /// on the next request. This is the client's next page token for retrieving more data. Set to null on first paged request. Optional.
+    /// </summary>
+    [JsonPropertyName("continuationToken")]
+    public string? ContinuationToken { get; set; }
+
+    /// <summary>
     /// Global search term and options. Can be null if no global search is applied.
     /// </summary>
     [JsonPropertyName("search")]
