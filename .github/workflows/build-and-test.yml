@@ -38,7 +38,7 @@ jobs:
         run: dotnet build test/Soenneker.DataTables.Dtos.ServerSideRequest.Tests/Soenneker.DataTables.Dtos.ServerSideRequest.Tests.csproj --configuration Release --no-restore --verbosity minimal
 
       - name: Test
-        run: dotnet test test/Soenneker.DataTables.Dtos.ServerSideRequest.Tests/Soenneker.DataTables.Dtos.ServerSideRequest.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
+        run: dotnet test --project test/Soenneker.DataTables.Dtos.ServerSideRequest.Tests/Soenneker.DataTables.Dtos.ServerSideRequest.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
 
       - name: Pack
         run: dotnet pack src/Soenneker.DataTables.Dtos.ServerSideRequest/Soenneker.DataTables.Dtos.ServerSideRequest.csproj --configuration Release --no-build --no-restore --output . --verbosity minimal
