@@ -2,6 +2,9 @@
 
 namespace Soenneker.DataTables.Dtos.ServerSideRequest;
 
+/// <summary>
+/// Represents the data table column request.
+/// </summary>
 public sealed class DataTableColumnRequest
 {
     /// <summary>
