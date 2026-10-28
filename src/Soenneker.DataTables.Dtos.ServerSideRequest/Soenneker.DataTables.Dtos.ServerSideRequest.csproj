@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net11.0</TargetFramework>
-        <IsAotCompatible>true</IsAotCompatible>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <Nullable>enable</Nullable>
         <Platforms>AnyCPU</Platforms>
         <NoWarn>$(NoWarn);1591</NoWarn>
@@ -42,5 +41,8 @@
         <None Include="..\..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\..\icon.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Text.Json" Version="10.0.14" />
     </ItemGroup>
 </Project>
